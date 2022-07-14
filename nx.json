@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
-  "npmScope": "easy",
+  "npmScope": "lmwr",
   "affected": {
     "defaultBase": "main"
   },
@@ -15,12 +15,7 @@
     "default": {
       "runner": "@nrwl/nx-cloud",
       "options": {
-        "cacheableOperations": [
-          "build",
-          "lint",
-          "test",
-          "e2e"
-        ],
+        "cacheableOperations": ["build", "lint", "test", "e2e"],
         "accessToken": "ZDJjMzMyMGYtYzViMy00OGMyLWI2MWMtYzA1ZjllODQ2ZmJkfHJlYWQtd3JpdGU="
       }
     }
@@ -38,13 +33,6 @@
       "application": {
         "babel": true
       }
-    },
-    "@nrwl/next": {
-      "application": {
-        "style": "scss",
-        "linter": "eslint"
-      }
     }
-  },
-  "defaultProject": "web"
+  }
 }
